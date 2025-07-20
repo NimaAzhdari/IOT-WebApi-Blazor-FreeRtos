@@ -13,8 +13,11 @@ This project showcases a scalable architecture for smart agriculture, home autom
 
 /
 ├── ESP32-FreeRtos/         ← ESP32 firmware with FreeRTOS + WiFi + HTTP client
+
 ├── Airponic/                 ← ASP.NET Core Web API for data handling
+
 ├── Airponic.Client/           ← Blazor WebAssembly UI for real-time monitoring
+
 └── README.md
 
 🚀 Getting Started
