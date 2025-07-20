@@ -1,0 +1,102 @@
+@page "/SetConfig"
+@inject DialogService dialog
+@inject TooltipService tooltip
+@rendermode InteractiveWebAssembly
+@inject HttpClient Http
+
+<PageTitle>SetConfig</PageTitle>
+
+
+
+<RadzenTemplateForm TItem="MicroConfigDto" Data="@config" Submit="@OnSubmit">
+<RadzenStack Gap="2rem" class="rz-p-sm-12">
+
+<RadzenFormField Text="نام وای فای"  Variant="@variant" MouseEnter="@(args => ShowTooltip(args,"ssid", new TooltipOptions(){ Position = TooltipPosition.Top }) )">
+    <RadzenTextBox Name="ssid" @bind-Value="@config.ssid"/>
+    <RadzenRequiredValidator Component="ssid" Text="نام وای فای را وارد کنید"/>
+</RadzenFormField>
+
+<RadzenFormField Text="رمز عبور وای فای" Variant="@variant" MouseEnter="@(args => ShowTooltip(args,"pass", new TooltipOptions(){ Position = TooltipPosition.Top }) )">
+    <RadzenTextBox Name="pass" @bind-Value="@config.password"/>
+    <RadzenRequiredValidator Component="pass" Text="رمز عبور وای فای را وارد کنید"/>
+</RadzenFormField>
+
+<RadzenFormField Text="مدت زمان روشن بودن پمپ" Variant="@variant" MouseEnter="@(args => ShowTooltip(args,"pumpon", new TooltipOptions(){ Position = TooltipPosition.Top }) )">
+    <RadzenNumeric Name="pompon" @bind-Value="@config.PUMP_ON_DURATION"  ShowUpDown="false"/>
+    <RadzenRequiredValidator  Component="pompon" Text="مدت زمان روشن بودن پمپ را وارد کنید"/>
+</RadzenFormField>
+
+<RadzenFormField Text="مدت زمان خاموش بودن پمپ" Variant="@variant" MouseEnter="@(args => ShowTooltip(args,"pumpoff", new TooltipOptions(){ Position = TooltipPosition.Top }) )">
+    <RadzenNumeric Name="pompoff" @bind-Value="@config.PUMP_OFF_DURATION"  ShowUpDown="false"/>
+    <RadzenRequiredValidator  Component="pompoff" Text="مدت زمان خاموش بودن پمپ را وارد کنید"/>
+</RadzenFormField>
+
+<RadzenFormField Text="دوره ارسال اطلاعات" Variant="@variant" MouseEnter="@(args => ShowTooltip(args,"sensor", new TooltipOptions(){ Position = TooltipPosition.Top }) )">
+    <RadzenNumeric Name="cycle" @bind-Value="@config.SENSOR_CYCLE"  ShowUpDown="false"/>
+    <RadzenRequiredValidator  Component="cycle" Text="دوره ارسال اطلاعات را وارد کنید"/>
+</RadzenFormField>
+
+<RadzenFormField Text="مرز روشنایی" Variant="@variant" MouseEnter="@(args => ShowTooltip(args,"light", new TooltipOptions(){ Position = TooltipPosition.Top }) )">
+    <RadzenNumeric Name="light" @bind-Value="@config.LIGHT_THRESHOLD"  ShowUpDown="false"/>
+    <RadzenRequiredValidator  Component="light" Text="مرز روشنایی را وارد کنید"/>
+</RadzenFormField>
+
+<RadzenButton ButtonType="ButtonType.Submit" Text="ارسال" ></RadzenButton>
+
+
+</RadzenStack>
+</RadzenTemplateForm>
+
+
+
+@code
+{
+Variant variant = Variant.Outlined;
+MicroConfigDto config=new();
+
+void ShowTooltip(ElementReference elementReference, string input, TooltipOptions options = null)
+{ 
+    switch (input)
+    {
+        case "ssid":
+            tooltip.Open(elementReference, "نام شبکه وای فای جدید را اینجا وارد کنید", options);
+            break;
+        case "pass":
+            tooltip.Open(elementReference, "رمز عبور شبکه وای فای جدید را اینجا وارد کنید", options);
+            break;
+        case "pumpon":
+            tooltip.Open(elementReference, "مدت زمانی که می خواهید پمپ آبیاری روشن باشد را اینجا وارد کنید", options);
+            break;
+        case "pumpoff":
+            tooltip.Open(elementReference, "مدت زمانی که می خواهید پمپ آبیاری خاموش باشد را اینجا وارد کنید", options);
+            break;
+        case "sensor":
+            tooltip.Open(elementReference, "چرخه زمانی که میخواهید اطلاعات را دریافت کنید را اینجا وارد کنید", options);
+            break;
+        case "light":
+            tooltip.Open(elementReference, "مرز روشنایی که از آن پایین تر تاریک محسوب می شود را اینجا وارد کنید", options);
+            break;
+
+    }
+}
+
+
+
+protected override async Task OnInitializedAsync()
+{//https://fogponic.ir
+    config=await Http.GetFromJsonAsync<MicroConfigDto>(" http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0");
+}
+public async Task OnSubmit(MicroConfigDto data)
+{
+    Console.WriteLine("submit clicked!");
+    var response=await Http.PostAsJsonAsync("/api/Config/SetConfig",data);
+    
+
+if(response.IsSuccessStatusCode)
+    {
+        await dialog.Alert("با موفقیت ارسال شد","");
+    }
+}
+
+
+}

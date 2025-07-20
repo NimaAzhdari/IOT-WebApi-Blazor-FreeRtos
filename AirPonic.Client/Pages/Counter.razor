@@ -1,0 +1,45 @@
+﻿@page "/counter"
+@rendermode InteractiveWebAssembly
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<RadzenButton Text="Hi"></RadzenButton>
+
+<RadzenChart Style="height: 400px;">
+    <RadzenLineSeries Data="@data" CategoryProperty="Day" ValueProperty="Value" Title="Temperature" />
+</RadzenChart>
+
+
+
+@code {
+     class DataPoint
+    {
+        public string Day { get; set; }
+        public float Value { get; set; }
+    }
+
+    List<DataPoint> data = new()
+    {
+        new DataPoint { Day = "Mon", Value = 22 },
+        new DataPoint { Day = "Tue", Value = 25 },
+        new DataPoint { Day = "Wed", Value = 20 },
+        new DataPoint { Day = "Thu", Value = 27 },
+        new DataPoint { Day = "Fri", Value = 23 }
+    };
+    
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        Console.WriteLine("Button clicked!");
+        currentCount++;
+    }
+}

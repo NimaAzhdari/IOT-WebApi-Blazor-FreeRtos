@@ -1,0 +1,59 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AirPonic.Client
+build_property.RootNamespace = AirPonic.Client
+build_property.ProjectDir = D:\dot_net_app\AirPonic\AirPonic.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\dot_net_app\AirPonic\AirPonic.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/Pages/DeviceId.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlSWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/Pages/LightChart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlnaHRDaGFydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/Pages/MicroConfig.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWljcm9Db25maWcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dot_net_app/AirPonic/AirPonic.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

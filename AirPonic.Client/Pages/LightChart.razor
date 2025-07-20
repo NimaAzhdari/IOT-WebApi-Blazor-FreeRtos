@@ -1,0 +1,110 @@
+
+@page "/LightChart"
+@rendermode InteractiveWebAssembly
+@inject HttpClient Http
+
+<PageTitle>DashBoard</PageTitle>
+
+
+<RadzenRow>
+<RadzenColumn>
+<RadzenCard Variant="Variant.Outlined" Style="height: 100%;">
+<RadzenStack  JustifyContent="JustifyContent.Center" Style="height: 100%;">
+<h2><strong>سطح آب</strong></h2>
+ <RadzenRadialGauge Style="width: 100%; height: 300px;">
+        <RadzenRadialGaugeScale StartAngle="-90" EndAngle="90" Step="10" Min="0" Max="100" TickPosition=GaugeTickPosition.None>
+            <RadzenRadialGaugeScalePointer Value=@data.WaterLevel Length="0.6" ShowValue=true>
+                <Template Context="pointer">
+                    <RadzenStack AlignItems="AlignItems.Center" Gap="0" class="rz-mt-4">
+                        <RadzenText TextStyle="TextStyle.H5" class="rz-m-0"><strong>@pointer.Value</strong></RadzenText>
+                        <RadzenText TextStyle="TextStyle.Caption">سطح آب</RadzenText>
+                    </RadzenStack>
+                </Template>
+            </RadzenRadialGaugeScalePointer>
+            <RadzenRadialGaugeScaleRange From="90" To="100" Fill="green" />
+            <RadzenRadialGaugeScaleRange From="80" To="90" Fill="orange" />
+            <RadzenRadialGaugeScaleRange From="0" To="80" Fill="red" />
+        </RadzenRadialGaugeScale>
+    </RadzenRadialGauge>
+</RadzenStack>
+</RadzenCard>
+</RadzenColumn>
+
+ 
+<RadzenColumn>
+
+<RadzenCard Variant="Variant.Outlined" Style="height: 100%;">
+<h2><strong>وضعیت چراغ رشد گیاه </strong></h2>
+<RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Center" Style="height: 80%;" >
+<RadzenTimeline Orientation="Orientation.Horizontal" >
+<Items>
+ <RadzenTimelineItem PointSize="PointSize.Large" PointStyle="@style" PointVariant="Variant.Text" PointShadow="0" Text="@LightStatus" >
+            <PointContent>
+                <RadzenIcon Icon="lightbulb" Style="font-size: 80px;"  />
+            </PointContent>
+            
+</RadzenTimelineItem>
+</Items>
+</RadzenTimeline>
+</RadzenStack>
+</RadzenCard>
+</RadzenColumn>
+</RadzenRow>
+
+<RadzenCard Variant="Variant.Outlined" Style="height: 100%;" class="rz-my-2">
+<RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Center" Style="height: 100%;">
+<h2><strong>وضعیت نور در روز جاری </strong></h2>
+<RadzenChart Style="height: 400px;">
+    <RadzenLineSeries Data="@data.SensorData" CategoryProperty="Time" ValueProperty="Light" Title="نمودار نور" />
+</RadzenChart>
+</RadzenStack>
+</RadzenCard>
+
+<RadzenCard Variant="Variant.Outlined" Style="height: 100%;" class="rz-my-2">
+<RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Center" Style="height: 100%;">
+<h2><strong>وضعیت رطوبت در روز جاری </strong></h2>
+<RadzenChart Style="height: 400px;">
+    <RadzenLineSeries Data="@data.SensorData" CategoryProperty="Time" ValueProperty="Humidity" Title=" نمودار رطوبت" />
+</RadzenChart>
+</RadzenStack>
+</RadzenCard>
+
+<RadzenCard Variant="Variant.Outlined" Style="height: 100%;" class="rz-my-2">
+<RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Center" Style="height: 100%;">
+<h2><strong>وضعیت دما در روز جاری </strong></h2>
+<RadzenChart Style="height: 400px;">
+    <RadzenLineSeries Data="@data.SensorData" CategoryProperty="Time" ValueProperty="Temperature" Title=" نمودار دما" />
+</RadzenChart>
+</RadzenStack>
+</RadzenCard>
+
+
+
+@code
+{
+ 
+ ChartDto? data =new();
+ string LightStatus="چراغ خاموش است";
+ PointStyle style = PointStyle.Dark;
+protected override async Task OnInitializedAsync()
+{
+   // https://fogponic.ir
+    data =await Http.GetFromJsonAsync<ChartDto>(" http://localhost:5266/api/Chart/light");
+    if(data.LightIsOn)
+    {
+        LightStatus="چراغ روشن است";
+        style=PointStyle.Warning;
+    }
+    
+}
+
+
+@*public class LightData
+{
+   public double Light {get;set;} 
+    public double Humidity {get;set;} 
+    public double Temperature {get;set;} 
+    public string Time {get;set;} 
+}*@
+
+}

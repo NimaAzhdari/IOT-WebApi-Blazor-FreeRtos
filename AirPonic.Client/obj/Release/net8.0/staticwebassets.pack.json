@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\dot_net_app\\AirPonic\\AirPonic.Client\\bin\\release\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\dot_net_app\\AirPonic\\AirPonic.Client\\obj\\release\\net8.0\\compressed\\71srckwwkh.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\dot_net_app\\AirPonic\\AirPonic.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "D:\\dot_net_app\\AirPonic\\AirPonic.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\release\\net8.0\\staticwebassets\\msbuild.AirPonic.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\release\\net8.0\\staticwebassets\\msbuild.build.AirPonic.Client.props",
+      "PackagePath": "build\\AirPonic.Client.props"
+    },
+    {
+      "Id": "obj\\release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AirPonic.Client.props",
+      "PackagePath": "buildMultiTargeting\\AirPonic.Client.props"
+    },
+    {
+      "Id": "obj\\release\\net8.0\\staticwebassets\\msbuild.buildTransitive.AirPonic.Client.props",
+      "PackagePath": "buildTransitive\\AirPonic.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

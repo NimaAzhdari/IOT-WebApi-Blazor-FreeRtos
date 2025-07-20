@@ -1,0 +1,351 @@
+2025-06-20 13:05:20.718 +03:30 [INF] User profile is available. Using 'C:\Users\mohse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-20 13:05:21.408 +03:30 [INF] Now listening on: http://localhost:5266
+2025-06-20 13:05:21.411 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-20 13:05:21.412 +03:30 [INF] Hosting environment: Development
+2025-06-20 13:05:21.412 +03:30 [INF] Content root path: D:\dot_net_app\AirPonic\AirPonic
+2025-06-20 13:05:22.445 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 13:05:22.497 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-06-20 13:05:22.499 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 13:05:22.687 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 13:05:22.695 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 253.8424ms
+2025-06-20 13:05:22.878 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-20 13:05:22.878 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-20 13:05:22.883 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.9686ms
+2025-06-20 13:05:22.884 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-20 13:05:22.892 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-20 13:05:22.893 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-20 13:05:22.894 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 16.9989ms
+2025-06-20 13:05:30.691 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/LightChart - null null
+2025-06-20 13:05:30.697 +03:30 [INF] Executing endpoint '/LightChart (/LightChart)'
+2025-06-20 13:05:30.744 +03:30 [INF] Start processing HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 13:05:30.745 +03:30 [INF] Sending HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 13:05:30.876 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 13:05:30.877 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 13:05:30.945 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 13:05:33.577 +03:30 [INF] Executed DbCommand (79ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 13:05:33.725 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 13:05:33.756 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 2803.0166ms
+2025-06-20 13:05:33.757 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 13:05:33.766 +03:30 [INF] Received HTTP response headers after 3007.4378ms - 200
+2025-06-20 13:05:33.767 +03:30 [INF] End processing HTTP request after 3037.0756ms - 200
+2025-06-20 13:05:33.767 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 2891.5643ms
+2025-06-20 13:05:33.802 +03:30 [INF] Executed endpoint '/LightChart (/LightChart)'
+2025-06-20 13:05:33.809 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/LightChart - 200 null text/html; charset=utf-8 3117.8079ms
+2025-06-20 13:05:33.842 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-20 13:05:33.844 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.872 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-20 13:05:33.873 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.874 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 31.7ms
+2025-06-20 13:05:33.884 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-20 13:05:33.885 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.929 +03:30 [INF] Sending file. Request path: '/_framework/blazor.boot.json.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz'
+2025-06-20 13:05:33.930 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.930 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 200 10084 application/json 46.4749ms
+2025-06-20 13:05:33.961 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-20 13:05:33.962 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-20 13:05:33.962 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.962 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.963 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-20 13:05:33.963 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-20 13:05:33.964 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.964 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 13:05:33.964 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 2.3412ms
+2025-06-20 13:05:33.964 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 2.8176ms
+2025-06-20 13:05:33.989 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-20 13:05:33.989 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-20 13:05:33.991 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-20 13:05:33.992 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-20 13:05:33.993 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 2.2946ms
+2025-06-20 13:05:33.993 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 4.0591ms
+2025-06-20 13:05:34.534 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload.js - null null
+2025-06-20 13:05:34.534 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload.js - 200 574 application/javascript; charset=utf-8 0.3162ms
+2025-06-20 13:05:34.541 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload - null null
+2025-06-20 13:05:34.543 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload - 204 null null 1.7288ms
+2025-06-20 13:05:34.913 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 13:05:34.914 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 13:05:34.915 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 13:05:34.975 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 13:05:34.979 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 13:05:34.979 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 64.3193ms
+2025-06-20 13:05:34.980 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 13:05:34.980 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 66.704ms
+2025-06-20 17:15:57.334 +03:30 [INF] User profile is available. Using 'C:\Users\mohse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-20 17:15:57.880 +03:30 [INF] Now listening on: http://localhost:5266
+2025-06-20 17:15:57.885 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-20 17:15:57.885 +03:30 [INF] Hosting environment: Development
+2025-06-20 17:15:57.886 +03:30 [INF] Content root path: D:\dot_net_app\AirPonic\AirPonic
+2025-06-20 17:15:59.020 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:15:59.079 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-06-20 17:15:59.083 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:15:59.335 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:15:59.349 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 334.6029ms
+2025-06-20 17:15:59.636 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/app.css - null null
+2025-06-20 17:15:59.636 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-20 17:15:59.639 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-20 17:15:59.641 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.6155ms
+2025-06-20 17:15:59.642 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-20 17:15:59.647 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-20 17:15:59.647 +03:30 [INF] The file /app.css was not modified
+2025-06-20 17:15:59.649 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-20 17:15:59.649 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/app.css - 304 null text/css 14.1003ms
+2025-06-20 17:15:59.649 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 10.2208ms
+2025-06-20 17:16:15.434 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/LightChart - null null
+2025-06-20 17:16:15.439 +03:30 [INF] Executing endpoint '/LightChart (/LightChart)'
+2025-06-20 17:16:15.480 +03:30 [INF] Start processing HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:16:15.482 +03:30 [INF] Sending HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:16:15.598 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:16:15.600 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:16:15.669 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:16:18.137 +03:30 [INF] Executed DbCommand (72ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:16:18.313 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:16:18.349 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 2672.3944ms
+2025-06-20 17:16:18.350 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:16:18.359 +03:30 [INF] Received HTTP response headers after 2861.8966ms - 200
+2025-06-20 17:16:18.361 +03:30 [INF] End processing HTTP request after 2895.3681ms - 200
+2025-06-20 17:16:18.363 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 2765.0502ms
+2025-06-20 17:16:18.403 +03:30 [INF] Executed endpoint '/LightChart (/LightChart)'
+2025-06-20 17:16:18.411 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/LightChart - 200 null text/html; charset=utf-8 2976.6959ms
+2025-06-20 17:16:18.441 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-20 17:16:18.443 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.460 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-20 17:16:18.463 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.464 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 23.1426ms
+2025-06-20 17:16:18.475 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-20 17:16:18.475 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.499 +03:30 [INF] Sending file. Request path: '/_framework/blazor.boot.json.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz'
+2025-06-20 17:16:18.499 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.500 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 200 10084 application/json 24.8588ms
+2025-06-20 17:16:18.521 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-20 17:16:18.521 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-20 17:16:18.522 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.522 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.522 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-20 17:16:18.522 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-20 17:16:18.522 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.522 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:16:18.522 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 1.0887ms
+2025-06-20 17:16:18.522 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 1.2165ms
+2025-06-20 17:16:18.593 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-20 17:16:18.593 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-20 17:16:18.594 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-20 17:16:18.594 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-20 17:16:18.594 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 0.9965ms
+2025-06-20 17:16:18.595 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 1.1414ms
+2025-06-20 17:16:19.130 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload.js - null null
+2025-06-20 17:16:19.130 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload.js - 200 574 application/javascript; charset=utf-8 0.322ms
+2025-06-20 17:16:19.139 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload - null null
+2025-06-20 17:16:19.144 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload - 204 null null 4.8339ms
+2025-06-20 17:16:19.542 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:16:19.544 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:16:19.544 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:16:19.689 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:16:19.694 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:16:19.695 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 150.2442ms
+2025-06-20 17:16:19.695 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:16:19.695 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 153.5839ms
+2025-06-20 17:16:45.058 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/SetConfig - null null
+2025-06-20 17:16:45.059 +03:30 [INF] Executing endpoint '/SetConfig (/SetConfig)'
+2025-06-20 17:16:45.082 +03:30 [INF] Start processing HTTP request GET http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0
+2025-06-20 17:16:45.082 +03:30 [INF] Sending HTTP request GET http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0
+2025-06-20 17:16:45.084 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0 - null null
+2025-06-20 17:16:45.084 +03:30 [INF] Executing endpoint 'Config.GetConfig (AirPonic)'
+2025-06-20 17:16:45.104 +03:30 [INF] Route matched with {action = "GetConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetConfig(System.String) on controller Config (AirPonic).
+2025-06-20 17:16:45.340 +03:30 [INF] Executed DbCommand (19ms) [Parameters=[@__deviceid_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`ConfigVersion`, `m`.`DeviceId`, `m`.`LIGHT_THRESHOLD`, `m`.`LastUpdate`, `m`.`PUMP_OFF_DURATION`, `m`.`PUMP_ON_DURATION`, `m`.`SENSOR_CYCLE`, `m`.`password`, `m`.`ssid`
+FROM `MicroConfig` AS `m`
+WHERE `m`.`DeviceId` = @__deviceid_0
+ORDER BY `m`.`LastUpdate` DESC
+LIMIT 1
+2025-06-20 17:16:45.378 +03:30 [INF] Executing OkObjectResult, writing value of type 'MicroConfigDto'.
+2025-06-20 17:16:45.386 +03:30 [INF] Executed action Config.GetConfig (AirPonic) in 281.1361ms
+2025-06-20 17:16:45.386 +03:30 [INF] Executed endpoint 'Config.GetConfig (AirPonic)'
+2025-06-20 17:16:45.386 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0 - 200 null application/json; charset=utf-8 302.4452ms
+2025-06-20 17:16:45.387 +03:30 [INF] Received HTTP response headers after 304.6326ms - 200
+2025-06-20 17:16:45.387 +03:30 [INF] End processing HTTP request after 305.5618ms - 200
+2025-06-20 17:16:45.402 +03:30 [INF] Executed endpoint '/SetConfig (/SetConfig)'
+2025-06-20 17:16:45.403 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/SetConfig - 200 null text/html; charset=utf-8 344.6398ms
+2025-06-20 17:16:45.492 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0 - null null
+2025-06-20 17:16:45.494 +03:30 [INF] Executing endpoint 'Config.GetConfig (AirPonic)'
+2025-06-20 17:16:45.495 +03:30 [INF] Route matched with {action = "GetConfig", controller = "Config"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetConfig(System.String) on controller Config (AirPonic).
+2025-06-20 17:16:45.521 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__deviceid_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`ConfigVersion`, `m`.`DeviceId`, `m`.`LIGHT_THRESHOLD`, `m`.`LastUpdate`, `m`.`PUMP_OFF_DURATION`, `m`.`PUMP_ON_DURATION`, `m`.`SENSOR_CYCLE`, `m`.`password`, `m`.`ssid`
+FROM `MicroConfig` AS `m`
+WHERE `m`.`DeviceId` = @__deviceid_0
+ORDER BY `m`.`LastUpdate` DESC
+LIMIT 1
+2025-06-20 17:16:45.522 +03:30 [INF] Executing OkObjectResult, writing value of type 'MicroConfigDto'.
+2025-06-20 17:16:45.522 +03:30 [INF] Executed action Config.GetConfig (AirPonic) in 27.3335ms
+2025-06-20 17:16:45.522 +03:30 [INF] Executed endpoint 'Config.GetConfig (AirPonic)'
+2025-06-20 17:16:45.522 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Config/GetConfig/bb505cb3-ee8e-4c70-9b11-bdba7c210bb0 - 200 null application/json; charset=utf-8 29.8834ms
+2025-06-20 17:17:15.794 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:17:15.794 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:17:15.797 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:17:15.797 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 3.6346ms
+2025-06-20 17:17:18.106 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:17:18.106 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:17:18.108 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:17:18.109 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 2.3157ms
+2025-06-20 17:23:27.084 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/LightChart - null null
+2025-06-20 17:23:27.084 +03:30 [INF] Executing endpoint '/LightChart (/LightChart)'
+2025-06-20 17:23:27.087 +03:30 [INF] Start processing HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:23:27.087 +03:30 [INF] Sending HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:23:27.093 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:23:27.093 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:23:27.094 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:23:27.175 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:23:27.179 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:23:27.180 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 85.7366ms
+2025-06-20 17:23:27.180 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:23:27.180 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 86.6711ms
+2025-06-20 17:23:27.180 +03:30 [INF] Received HTTP response headers after 92.6593ms - 200
+2025-06-20 17:23:27.180 +03:30 [INF] End processing HTTP request after 93.2631ms - 200
+2025-06-20 17:23:27.184 +03:30 [INF] Executed endpoint '/LightChart (/LightChart)'
+2025-06-20 17:23:27.184 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/LightChart - 200 null text/html; charset=utf-8 100.6905ms
+2025-06-20 17:23:27.208 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:23:27.208 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:23:27.209 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:23:27.232 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:23:27.233 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:23:27.235 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 25.7569ms
+2025-06-20 17:23:27.235 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:23:27.235 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 26.697ms
+2025-06-20 17:23:30.647 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:23:30.647 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:23:30.649 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:23:30.650 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 2.8242ms
+2025-06-20 17:23:32.332 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:23:32.332 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:23:32.334 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:23:32.334 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 2.2273ms
+2025-06-20 17:23:33.984 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:23:33.985 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:23:33.987 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:23:33.987 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 2.8453ms
+2025-06-20 17:23:34.026 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-20 17:23:34.026 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-20 17:23:34.027 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.2098ms
+2025-06-20 17:23:34.027 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-20 17:23:34.028 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-20 17:23:34.028 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-20 17:23:34.030 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 4.7635ms
+2025-06-20 17:25:19.912 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/LightChart - null null
+2025-06-20 17:25:19.913 +03:30 [INF] Executing endpoint '/LightChart (/LightChart)'
+2025-06-20 17:25:19.914 +03:30 [INF] Start processing HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:25:19.914 +03:30 [INF] Sending HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:25:19.921 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:25:19.921 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:25:19.921 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:25:19.952 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:25:19.956 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:25:19.956 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 34.7904ms
+2025-06-20 17:25:19.957 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:25:19.957 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 35.9113ms
+2025-06-20 17:25:19.959 +03:30 [INF] Received HTTP response headers after 43.5785ms - 200
+2025-06-20 17:25:19.959 +03:30 [INF] End processing HTTP request after 45.0131ms - 200
+2025-06-20 17:25:19.963 +03:30 [INF] Executed endpoint '/LightChart (/LightChart)'
+2025-06-20 17:25:19.964 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/LightChart - 200 null text/html; charset=utf-8 51.6279ms
+2025-06-20 17:25:19.994 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-20 17:25:19.994 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:19.996 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-20 17:25:19.996 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:19.996 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 2.5343ms
+2025-06-20 17:25:20.009 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-20 17:25:20.009 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:20.010 +03:30 [INF] The file /_framework/blazor.boot.json.gz was not modified
+2025-06-20 17:25:20.010 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:20.010 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 304 null application/json 0.9629ms
+2025-06-20 17:25:20.032 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-20 17:25:20.033 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:20.035 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-20 17:25:20.040 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-20 17:25:20.041 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:20.043 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:20.043 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-20 17:25:20.044 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-20 17:25:20.044 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 9.1422ms
+2025-06-20 17:25:20.046 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-20 17:25:20.048 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 12.8102ms
+2025-06-20 17:25:20.049 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-20 17:25:20.050 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-20 17:25:20.050 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 3.4073ms
+2025-06-20 17:25:20.051 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-20 17:25:20.051 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 1.3642ms
+2025-06-20 17:25:20.686 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload.js - null null
+2025-06-20 17:25:20.687 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload.js - 200 574 application/javascript; charset=utf-8 0.3211ms
+2025-06-20 17:25:20.695 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload - null null
+2025-06-20 17:25:20.695 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor-hotreload - 204 null null 0.1486ms
+2025-06-20 17:25:21.084 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:25:21.084 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:25:21.084 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:25:21.109 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:25:21.110 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:25:21.110 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 25.7975ms
+2025-06-20 17:25:21.110 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:25:21.111 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 26.8949ms
+2025-06-20 17:25:21.938 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/LightChart - null null
+2025-06-20 17:25:21.938 +03:30 [INF] Executing endpoint '/LightChart (/LightChart)'
+2025-06-20 17:25:21.939 +03:30 [INF] Start processing HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:25:21.939 +03:30 [INF] Sending HTTP request GET http://localhost:5266/api/Chart/light
+2025-06-20 17:25:21.941 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/api/Chart/light - null null
+2025-06-20 17:25:21.941 +03:30 [INF] Executing endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:25:21.941 +03:30 [INF] Route matched with {action = "LightData", controller = "Chart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LightData() on controller Chart (AirPonic).
+2025-06-20 17:25:21.969 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__today_0='?' (DbType = DateTime), @__tommorow_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`id`, `m`.`DeviceId`, `m`.`Humidity`, `m`.`Light`, `m`.`LightIsOn`, `m`.`Temperature`, `m`.`Timestamp`, `m`.`WaterLevel`
+FROM `MicroData` AS `m`
+WHERE (`m`.`Timestamp` >= @__today_0) AND (`m`.`Timestamp` <= @__tommorow_1)
+ORDER BY `m`.`Timestamp`
+2025-06-20 17:25:21.971 +03:30 [INF] Executing OkObjectResult, writing value of type 'ChartDto'.
+2025-06-20 17:25:21.971 +03:30 [INF] Executed action Chart.LightData (AirPonic) in 29.8722ms
+2025-06-20 17:25:21.971 +03:30 [INF] Executed endpoint 'Chart.LightData (AirPonic)'
+2025-06-20 17:25:21.971 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/api/Chart/light - 200 null application/json; charset=utf-8 30.6229ms
+2025-06-20 17:25:21.972 +03:30 [INF] Received HTTP response headers after 32.6103ms - 200
+2025-06-20 17:25:21.973 +03:30 [INF] End processing HTTP request after 33.6424ms - 200
+2025-06-20 17:25:21.977 +03:30 [INF] Executed endpoint '/LightChart (/LightChart)'
+2025-06-20 17:25:21.979 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/LightChart - 200 null text/html; charset=utf-8 41.4787ms
+2025-06-20 17:25:39.271 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:25:39.271 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:25:39.278 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:25:39.278 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 7.3514ms
+2025-06-20 17:25:41.616 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-20 17:25:41.617 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-20 17:25:41.622 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-20 17:25:41.622 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 5.7854ms
+2025-06-20 17:25:41.652 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-20 17:25:41.652 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.3106ms
+2025-06-20 17:25:41.653 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-20 17:25:41.654 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-20 17:25:41.654 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-20 17:25:41.655 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-20 17:25:41.655 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 2.2941ms

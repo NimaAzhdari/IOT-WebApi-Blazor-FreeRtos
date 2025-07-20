@@ -1,0 +1,21 @@
+@page "/DeviceId"
+@rendermode InteractiveWebAssembly
+
+<PageTitle>DeviceId</PageTitle>
+
+<h1>Id</h1>
+
+<p role="status">New Id: @GuidId</p>
+<input @bind="GuidId" />
+
+<button class="btn btn-primary" @onclick="Generate">ایجاد کد جدید</button>
+
+@code {
+    private string GuidId = "";
+
+    private void Generate()
+    {
+        Console.WriteLine("Button clicked!");
+        GuidId=Guid.NewGuid().ToString();
+    }
+}

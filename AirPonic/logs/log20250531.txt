@@ -1,0 +1,22 @@
+2025-05-31 17:48:09.797 +03:30 [INF] User profile is available. Using 'C:\Users\mohse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-31 17:48:10.483 +03:30 [INF] Creating key {ceaec1f0-ac10-4edb-9ea4-e4cacca044c5} with creation date 2025-05-31 14:18:10Z, activation date 2025-06-01 08:05:31Z, and expiration date 2025-08-29 14:18:10Z.
+2025-05-31 17:48:10.492 +03:30 [INF] Writing data to file 'C:\Users\mohse\AppData\Local\ASP.NET\DataProtection-Keys\key-ceaec1f0-ac10-4edb-9ea4-e4cacca044c5.xml'.
+2025-05-31 17:48:10.579 +03:30 [INF] Now listening on: http://localhost:5266
+2025-05-31 17:48:10.584 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-31 17:48:10.584 +03:30 [INF] Hosting environment: Development
+2025-05-31 17:48:10.585 +03:30 [INF] Content root path: D:\dot_net_app\AirPonic\AirPonic
+2025-05-31 17:57:24.266 +03:30 [INF] Request starting HTTP/1.1 POST http://localhost:5266/api/Micro/SendData - application/json 148
+2025-05-31 17:57:24.334 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-05-31 17:57:24.339 +03:30 [INF] Executing endpoint 'Micro.Create (AirPonic)'
+2025-05-31 17:57:24.418 +03:30 [INF] Route matched with {action = "Create", controller = "Micro"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(MicroDataDto) on controller Micro (AirPonic).
+2025-05-31 17:57:27.724 +03:30 [INF] Executed DbCommand (121ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Single), @p2='?' (DbType = Single), @p3='?' (DbType = Boolean), @p4='?' (DbType = Single), @p5='?' (DbType = DateTime), @p6='?' (DbType = Single)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `MicroData` (`DeviceId`, `Humidity`, `Light`, `LightIsOn`, `Temperature`, `Timestamp`, `TotalLightTime`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `id`
+FROM `MicroData`
+WHERE ROW_COUNT() = 1 AND `id` = LAST_INSERT_ID();
+2025-05-31 17:57:27.855 +03:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-31 17:57:27.907 +03:30 [INF] Executed action Micro.Create (AirPonic) in 3480.7317ms
+2025-05-31 17:57:27.908 +03:30 [INF] Executed endpoint 'Micro.Create (AirPonic)'
+2025-05-31 17:57:27.927 +03:30 [INF] Request finished HTTP/1.1 POST http://localhost:5266/api/Micro/SendData - 200 null application/json; charset=utf-8 3664.4787ms
+2025-05-31 17:57:56.511 +03:30 [INF] Application is shutting down...

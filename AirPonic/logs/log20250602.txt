@@ -1,0 +1,285 @@
+2025-06-02 13:12:21.947 +03:30 [INF] User profile is available. Using 'C:\Users\mohse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-02 13:12:22.532 +03:30 [INF] Now listening on: http://localhost:5266
+2025-06-02 13:12:22.536 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-02 13:12:22.537 +03:30 [INF] Hosting environment: Development
+2025-06-02 13:12:22.537 +03:30 [INF] Content root path: D:\dot_net_app\AirPonic\AirPonic
+2025-06-02 13:12:27.866 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-02 13:12:27.909 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-06-02 13:12:27.912 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-02 13:12:28.072 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-02 13:12:28.077 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 213.8534ms
+2025-06-02 13:12:28.106 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/app.css - null null
+2025-06-02 13:12:28.106 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/bootstrap/bootstrap.min.css - null null
+2025-06-02 13:12:28.107 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/AirPonic.styles.css - null null
+2025-06-02 13:12:28.108 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/css/material-base.css?v=6.6.4.0 - null null
+2025-06-02 13:12:28.109 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/css/default.css - null null
+2025-06-02 13:12:28.110 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-02 13:12:28.110 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-02 13:12:28.132 +03:30 [INF] Sending file. Request path: '/_framework/blazor.web.js'. Physical path: 'N/A'
+2025-06-02 13:12:28.132 +03:30 [INF] Sending file. Request path: '/AirPonic.styles.css'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic\obj\Debug\net8.0\scopedcss\bundle\AirPonic.styles.css'
+2025-06-02 13:12:28.133 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-02 13:12:28.133 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/AirPonic.styles.css - 200 5899 text/css 26.3568ms
+2025-06-02 13:12:28.133 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 200 187162 text/javascript 23.7985ms
+2025-06-02 13:12:28.135 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/Radzen.Blazor.js?v=6.6.4.0 - null null
+2025-06-02 13:12:28.145 +03:30 [INF] Sending file. Request path: '/bootstrap/bootstrap.min.css'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic\wwwroot\bootstrap\bootstrap.min.css'
+2025-06-02 13:12:28.145 +03:30 [INF] Sending file. Request path: '/app.css'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic\wwwroot\app.css'
+2025-06-02 13:12:28.145 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/app.css - 200 2591 text/css 40.0347ms
+2025-06-02 13:12:28.145 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/bootstrap/bootstrap.min.css - 200 162720 text/css 39.195ms
+2025-06-02 13:12:28.157 +03:30 [INF] Sending file. Request path: '/_content/Radzen.Blazor/css/material-base.css'. Physical path: 'C:\Users\mohse\.nuget\packages\radzen.blazor\6.6.4\staticwebassets\css\material-base.css'
+2025-06-02 13:12:28.157 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/css/material-base.css?v=6.6.4.0 - 200 661731 text/css 48.4566ms
+2025-06-02 13:12:28.172 +03:30 [INF] Sending file. Request path: '/_content/Radzen.Blazor/css/default.css'. Physical path: 'C:\Users\mohse\.nuget\packages\radzen.blazor\6.6.4\staticwebassets\css\default.css'
+2025-06-02 13:12:28.172 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/css/default.css - 200 654976 text/css 63.1975ms
+2025-06-02 13:12:28.210 +03:30 [INF] Sending file. Request path: '/_content/Radzen.Blazor/Radzen.Blazor.js'. Physical path: 'C:\Users\mohse\.nuget\packages\radzen.blazor\6.6.4\staticwebassets\Radzen.Blazor.js'
+2025-06-02 13:12:28.210 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/Radzen.Blazor.js?v=6.6.4.0 - 200 93528 text/javascript 75.3729ms
+2025-06-02 13:12:28.225 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-02 13:12:28.227 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.233 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 - null null
+2025-06-02 13:12:28.254 +03:30 [INF] Sending file. Request path: '/_framework/dotnet.js.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.gz'
+2025-06-02 13:12:28.255 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.255 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 200 11555 text/javascript 29.9711ms
+2025-06-02 13:12:28.264 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-02 13:12:28.264 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.275 +03:30 [INF] Sending file. Request path: '/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2'. Physical path: 'C:\Users\mohse\.nuget\packages\radzen.blazor\6.6.4\staticwebassets\fonts\MaterialSymbolsOutlined.woff2'
+2025-06-02 13:12:28.275 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2 - 200 973704 font/woff2 41.9128ms
+2025-06-02 13:12:28.287 +03:30 [INF] Sending file. Request path: '/_framework/blazor.boot.json.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz'
+2025-06-02 13:12:28.288 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.288 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 200 10084 application/json 23.982ms
+2025-06-02 13:12:28.313 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-02 13:12:28.313 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-02 13:12:28.313 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.313 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.333 +03:30 [INF] Sending file. Request path: '/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.runtime.8.0.15.0o031n5yuo.js.gz'
+2025-06-02 13:12:28.333 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.333 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 200 65688 text/javascript 20.4285ms
+2025-06-02 13:12:28.333 +03:30 [INF] Sending file. Request path: '/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.native.8.0.15.vfezn631t0.js.gz'
+2025-06-02 13:12:28.334 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.334 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 200 36405 text/javascript 20.7696ms
+2025-06-02 13:12:28.362 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-02 13:12:28.372 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-02 13:12:28.375 +03:30 [INF] Sending file. Request path: '/appsettings.Development.json'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\wwwroot\appsettings.Development.json'
+2025-06-02 13:12:28.376 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 200 127 application/json 3.2577ms
+2025-06-02 13:12:28.375 +03:30 [INF] Sending file. Request path: '/appsettings.json'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\wwwroot\appsettings.json'
+2025-06-02 13:12:28.377 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 200 127 application/json 14.3341ms
+2025-06-02 13:12:28.476 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/AirPonic.Client.wasm - null null
+2025-06-02 13:12:28.476 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/AirPonic.Client.pdb - null null
+2025-06-02 13:12:28.476 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.476 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.494 +03:30 [INF] Sending file. Request path: '/_framework/AirPonic.Client.wasm.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\AirPonic.Client.wasm.gz'
+2025-06-02 13:12:28.494 +03:30 [INF] Sending file. Request path: '/_framework/AirPonic.Client.pdb.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\AirPonic.Client.pdb.gz'
+2025-06-02 13:12:28.494 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.494 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:28.494 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/AirPonic.Client.wasm.gz - 200 11648 application/wasm 18.3811ms
+2025-06-02 13:12:28.494 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/AirPonic.Client.pdb.gz - 200 20558 application/octet-stream 18.413ms
+2025-06-02 13:12:28.857 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/favicon.png - null null
+2025-06-02 13:12:28.873 +03:30 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic\wwwroot\favicon.png'
+2025-06-02 13:12:28.873 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/favicon.png - 200 1148 image/png 16.0142ms
+2025-06-02 13:12:30.249 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/css/material-base.css?v=6.4.0.0 - null null
+2025-06-02 13:12:30.253 +03:30 [INF] Sending file. Request path: '/_content/Radzen.Blazor/css/material-base.css'. Physical path: 'C:\Users\mohse\.nuget\packages\radzen.blazor\6.6.4\staticwebassets\css\material-base.css'
+2025-06-02 13:12:30.253 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_content/Radzen.Blazor/css/material-base.css?v=6.4.0.0 - 200 661731 text/css 4.6835ms
+2025-06-02 13:12:47.948 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/LightChart - null null
+2025-06-02 13:12:47.948 +03:30 [INF] Executing endpoint '/LightChart (/LightChart)'
+2025-06-02 13:12:47.961 +03:30 [INF] Executed endpoint '/LightChart (/LightChart)'
+2025-06-02 13:12:47.962 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/LightChart - 200 null text/html; charset=utf-8 13.633ms
+2025-06-02 13:12:47.991 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-02 13:12:47.991 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-02 13:12:47.993 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-02 13:12:47.993 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-02 13:12:47.994 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 2.4474ms
+2025-06-02 13:12:48.015 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-02 13:12:48.015 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.016 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-02 13:12:48.016 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.016 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 1.6335ms
+2025-06-02 13:12:48.062 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-02 13:12:48.063 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.064 +03:30 [INF] The file /_framework/blazor.boot.json.gz was not modified
+2025-06-02 13:12:48.065 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.065 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 304 null application/json 3.2813ms
+2025-06-02 13:12:48.102 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-02 13:12:48.102 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-02 13:12:48.102 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.102 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.103 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-02 13:12:48.104 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.103 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-02 13:12:48.106 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 4.3726ms
+2025-06-02 13:12:48.106 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:48.107 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 4.805ms
+2025-06-02 13:12:48.110 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-02 13:12:48.111 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-02 13:12:48.111 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 0.8609ms
+2025-06-02 13:12:48.123 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-02 13:12:48.126 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-02 13:12:48.126 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 3.3339ms
+2025-06-02 13:12:56.098 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-02 13:12:56.099 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 0.7257ms
+2025-06-02 13:12:56.100 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-02 13:12:56.368 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map - null null
+2025-06-02 13:12:56.369 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:56.371 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map - null null
+2025-06-02 13:12:56.371 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:56.388 +03:30 [INF] Sending file. Request path: '/_framework/dotnet.js.map.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.map.gz'
+2025-06-02 13:12:56.388 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:56.388 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map.gz - 200 19156 text/plain 19.733ms
+2025-06-02 13:12:56.395 +03:30 [INF] Sending file. Request path: '/_framework/dotnet.runtime.js.map.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\dotnet.runtime.js.map.gz'
+2025-06-02 13:12:56.395 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:12:56.395 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map.gz - 200 103104 text/plain 24.0004ms
+2025-06-02 13:12:56.429 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/bootstrap/bootstrap.min.css.map - null null
+2025-06-02 13:12:56.497 +03:30 [INF] Sending file. Request path: '/bootstrap/bootstrap.min.css.map'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic\wwwroot\bootstrap\bootstrap.min.css.map'
+2025-06-02 13:12:56.498 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/bootstrap/bootstrap.min.css.map - 200 449111 text/plain 68.3567ms
+2025-06-02 13:13:02.661 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-02 13:13:02.662 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-02 13:13:02.686 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-02 13:13:02.686 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 24.9683ms
+2025-06-02 13:13:02.739 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-02 13:13:02.739 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 0.7959ms
+2025-06-02 13:13:02.742 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-02 13:13:02.750 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-02 13:13:02.751 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-02 13:13:02.751 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-02 13:13:02.751 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-02 13:13:02.751 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 1.0881ms
+2025-06-02 13:13:02.945 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-02 13:13:02.946 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:02.946 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-02 13:13:02.946 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:02.946 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 1.1431ms
+2025-06-02 13:13:03.103 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-02 13:13:03.103 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.104 +03:30 [INF] The file /_framework/blazor.boot.json.gz was not modified
+2025-06-02 13:13:03.104 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.104 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 304 null application/json 1.3459ms
+2025-06-02 13:13:03.120 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map - null null
+2025-06-02 13:13:03.121 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.123 +03:30 [INF] The file /_framework/dotnet.js.map.gz was not modified
+2025-06-02 13:13:03.123 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.128 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map.gz - 304 null text/plain 7.2817ms
+2025-06-02 13:13:03.147 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-02 13:13:03.147 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-02 13:13:03.147 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.147 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.148 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-02 13:13:03.148 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-02 13:13:03.148 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.148 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.148 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 0.8559ms
+2025-06-02 13:13:03.148 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 1.0023ms
+2025-06-02 13:13:03.253 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map - null null
+2025-06-02 13:13:03.253 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.253 +03:30 [INF] The file /_framework/dotnet.runtime.js.map.gz was not modified
+2025-06-02 13:13:03.254 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:13:03.254 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map.gz - 304 null text/plain 0.707ms
+2025-06-02 13:13:03.285 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-02 13:13:03.286 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-02 13:13:03.286 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 1.2095ms
+2025-06-02 13:13:03.286 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-02 13:13:03.288 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-02 13:13:03.288 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 1.8514ms
+2025-06-02 13:14:22.651 +03:30 [INF] Application is shutting down...
+2025-06-02 13:36:53.554 +03:30 [INF] User profile is available. Using 'C:\Users\mohse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-02 13:36:53.697 +03:30 [INF] Now listening on: http://localhost:5266
+2025-06-02 13:36:53.701 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-02 13:36:53.702 +03:30 [INF] Hosting environment: Development
+2025-06-02 13:36:53.702 +03:30 [INF] Content root path: D:\dot_net_app\AirPonic\AirPonic
+2025-06-02 13:37:29.675 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/ - null null
+2025-06-02 13:37:29.725 +03:30 [WRN] Failed to determine the https port for redirect.
+2025-06-02 13:37:29.729 +03:30 [INF] Executing endpoint '/ (/)'
+2025-06-02 13:37:30.020 +03:30 [INF] Executed endpoint '/ (/)'
+2025-06-02 13:37:30.083 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/ - 200 null text/html; charset=utf-8 411.3368ms
+2025-06-02 13:37:30.093 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-02 13:37:30.100 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-02 13:37:30.101 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-02 13:37:30.106 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-02 13:37:30.107 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-02 13:37:30.107 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 15.0073ms
+2025-06-02 13:37:30.110 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 8.7457ms
+2025-06-02 13:37:30.123 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-02 13:37:30.317 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-02 13:37:30.321 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.335 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-02 13:37:30.336 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.337 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 19.4433ms
+2025-06-02 13:37:30.351 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-02 13:37:30.352 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.367 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map - null null
+2025-06-02 13:37:30.368 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.368 +03:30 [INF] The file /_framework/dotnet.js.map.gz was not modified
+2025-06-02 13:37:30.369 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.369 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map.gz - 304 null text/plain 1.5298ms
+2025-06-02 13:37:30.388 +03:30 [INF] Sending file. Request path: '/_framework/blazor.boot.json.gz'. Physical path: 'D:\dot_net_app\AirPonic\AirPonic.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz'
+2025-06-02 13:37:30.388 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.388 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 200 10084 application/json 36.7308ms
+2025-06-02 13:37:30.392 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-02 13:37:30.392 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-02 13:37:30.392 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.392 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.393 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-02 13:37:30.393 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.393 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-02 13:37:30.393 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.393 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 1.2038ms
+2025-06-02 13:37:30.393 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 1.1222ms
+2025-06-02 13:37:30.421 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-02 13:37:30.421 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-02 13:37:30.421 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-02 13:37:30.422 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 0.9025ms
+2025-06-02 13:37:30.422 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-02 13:37:30.422 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 1.2466ms
+2025-06-02 13:37:30.550 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map - null null
+2025-06-02 13:37:30.550 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.551 +03:30 [INF] The file /_framework/dotnet.runtime.js.map.gz was not modified
+2025-06-02 13:37:30.551 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:37:30.551 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map.gz - 304 null text/plain 1.2636ms
+2025-06-02 13:47:25.987 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/counter - null null
+2025-06-02 13:47:25.988 +03:30 [INF] Executing endpoint '/counter (/counter)'
+2025-06-02 13:47:26.090 +03:30 [INF] Executed endpoint '/counter (/counter)'
+2025-06-02 13:47:26.092 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/counter - 200 null text/html; charset=utf-8 105.4376ms
+2025-06-02 13:51:09.582 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/counter - null null
+2025-06-02 13:51:09.584 +03:30 [INF] Executing endpoint '/counter (/counter)'
+2025-06-02 13:51:09.618 +03:30 [INF] Executed endpoint '/counter (/counter)'
+2025-06-02 13:51:09.619 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/counter - 200 null text/html; charset=utf-8 36.9579ms
+2025-06-02 13:51:09.679 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-06-02 13:51:09.681 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.6531ms
+2025-06-02 13:51:09.682 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5266/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-06-02 13:51:09.684 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - null null
+2025-06-02 13:51:09.684 +03:30 [INF] Executing endpoint 'Blazor web static files'
+2025-06-02 13:51:09.686 +03:30 [INF] The file /_framework/blazor.web.js was not modified
+2025-06-02 13:51:09.687 +03:30 [INF] Executed endpoint 'Blazor web static files'
+2025-06-02 13:51:09.688 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.web.js - 304 null text/javascript 3.6779ms
+2025-06-02 13:51:09.881 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js - null null
+2025-06-02 13:51:09.882 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.882 +03:30 [INF] The file /_framework/dotnet.js.gz was not modified
+2025-06-02 13:51:09.882 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.882 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.gz - 304 null text/javascript 0.957ms
+2025-06-02 13:51:09.897 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json - null null
+2025-06-02 13:51:09.897 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.898 +03:30 [INF] The file /_framework/blazor.boot.json.gz was not modified
+2025-06-02 13:51:09.898 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.898 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/blazor.boot.json.gz - 304 null application/json 1.3685ms
+2025-06-02 13:51:09.908 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js - null null
+2025-06-02 13:51:09.909 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js - null null
+2025-06-02 13:51:09.909 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.909 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.909 +03:30 [INF] The file /_framework/dotnet.native.8.0.15.vfezn631t0.js.gz was not modified
+2025-06-02 13:51:09.909 +03:30 [INF] The file /_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz was not modified
+2025-06-02 13:51:09.909 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.909 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.909 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.8.0.15.0o031n5yuo.js.gz - 304 null text/javascript 1.343ms
+2025-06-02 13:51:09.909 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.native.8.0.15.vfezn631t0.js.gz - 304 null text/javascript 0.9251ms
+2025-06-02 13:51:09.919 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map - null null
+2025-06-02 13:51:09.919 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.923 +03:30 [INF] The file /_framework/dotnet.js.map.gz was not modified
+2025-06-02 13:51:09.924 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:09.924 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.js.map.gz - 304 null text/plain 5.0784ms
+2025-06-02 13:51:09.935 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - null null
+2025-06-02 13:51:09.936 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/appsettings.json - null null
+2025-06-02 13:51:09.938 +03:30 [INF] The file /appsettings.Development.json was not modified
+2025-06-02 13:51:09.939 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.Development.json - 304 null application/json 4.9406ms
+2025-06-02 13:51:09.940 +03:30 [INF] The file /appsettings.json was not modified
+2025-06-02 13:51:09.940 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/appsettings.json - 304 null application/json 4.2768ms
+2025-06-02 13:51:10.064 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map - null null
+2025-06-02 13:51:10.064 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:10.064 +03:30 [INF] The file /_framework/dotnet.runtime.js.map.gz was not modified
+2025-06-02 13:51:10.065 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-06-02 13:51:10.065 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/dotnet.runtime.js.map.gz - 304 null text/plain 1.0415ms
+2025-06-02 14:14:43.278 +03:30 [INF] Application is shutting down...
