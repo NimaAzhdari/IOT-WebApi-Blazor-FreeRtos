@@ -18,6 +18,9 @@ This project showcases a scalable architecture for smart agriculture, home autom
 
 ├── Airponic.Client/           ← Blazor WebAssembly UI for real-time monitoring
 
+├── Shared/           ← data structer for both backend and frontend
+
+
 └── README.md
 
 🚀 Getting Started
