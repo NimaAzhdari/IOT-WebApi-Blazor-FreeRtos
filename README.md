@@ -82,8 +82,15 @@ Real-time data updates via SignalR
 OTA firmware updates to ESP32
 
 📬 Contact
+
 Made by Nima Azhdari
 For questions or feedback, open an issue.
+
+<img width="1920" height="1080" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/ec5cea9a-b68a-4389-976c-e53e91a9b3df" />
+<img width="1920" height="1080" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/e4b8c25a-fcc3-4c62-8a8a-33a241af639a" />
+<img width="1920" height="1080" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/dcf255ff-4e67-47f7-9bea-324fcff6f677" />
+
+
 
 
 
